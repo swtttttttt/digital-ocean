@@ -19,27 +19,6 @@
 
         }
 
-        h1 {
-            
-            position: absolute;
-            color: whitesmoke;
-            background-color: #4C5858;
-            opacity: 85%;
-            text-align: center;
-            width: 500px;
-            height: 460px;
-            border-radius: 10px;
-            border-color: gray;
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%);
-            font-family: Times, Times New Roman, serif	
-            
-            
-
-        }
-
         .container-lg {
             position: relative;
 
@@ -79,6 +58,8 @@
             text-align: center;
             font-family: Times, Times New Roman, serif;
             font-style: italic;	
+            margin-top: 21ch;
+            margin-bottom: 3ch;
    
         }
 
@@ -90,11 +71,14 @@
         }
 
         .footer {
-            background-color: #4C5858; 
             color: whitesmoke;
-            opacity: 90%;
-            background-size: cover;
+            background: url(https://i.pinimg.com/564x/7b/3e/fd/7b3efd1e8ed54575ec8090e61f0a56b1.jpg);
             background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            opacity: 85%;
+
+            
 
         }
 
@@ -120,6 +104,45 @@
 
         .adjust-margin {
             margin: 0;
+        }
+        .hero {
+            position: relative;
+            width: 100vw;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 150%;
+            background: url(https://i.pinimg.com/564x/7b/3e/fd/7b3efd1e8ed54575ec8090e61f0a56b1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            filter: brightness(75%);
+            opacity: 90%;
+            
+        }
+
+        .hero-content {
+            position: relative;
+            font-family: "Monserrat", sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0.625rem;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 0;
+            
         }
 
     </style>
@@ -151,30 +174,16 @@
         </div>
       </nav>
 
-    <div class="container-lg">
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-       
-        <div class="row justify-content-around adjust-margin">
-        
-            <div class="col-5">
-                <img src="https://i.pinimg.com/564x/26/11/3c/26113c0ed52a89754da866152e878336.jpg" class="background-title1 rounded float-left">
-            </div>
-            <div class=col-5>
-               <img src="https://i.pinimg.com/564x/7b/3e/fd/7b3efd1e8ed54575ec8090e61f0a56b1.jpg" class="background-title2 rounded float-right">
-            </div>
-            <h1 class="display-2 hover-overlay ripple shadow-1-strong rounded">
-                <p></p>
-                <strong>Sarah Wittenburg Web Developer</strong>
-                <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                </a>
+      <div class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Sarah Wittenburg Web Developer
             </h1>
         </div>
-        </p>
-        </div>
+    
+    </div>
+
+    
     </div>
     <h2></h2>
         <div class="container overflow-hidden bg-light text-dark rounded">
