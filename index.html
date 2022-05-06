@@ -13,40 +13,38 @@
 </head>
 <body>
     <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        .SarahMugPhoto, .SarahHeading {
+            width: 50%;
+        }
+
+        @media(max-width = 400px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+            }
+        
+
+        .SarahMugPhoto, .SarahHeading{
+            width: 100%;
+        }
+    }
+        
+
         .navbar-brand {
             font-family: Times, Times New Roman, serif;
             font-style: italic;	
 
         }
-        
-        .container {
-                background-color: #F6F0FB;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                
-            }
-
-        .container-lg {
-            position: relative;
-
-        }
-
-        .background-title1 {
-            height: 460px;
-            opacity: 95%;
-            width: 480px;
-
-        }
-
-        .background-title2 {
-            height: 460px;
-            opacity: 90%;
-            width: 420px;
-
-        } 
-
-        
+    
 
         .col-5 {
             text-align: center;
@@ -58,7 +56,6 @@
 
         .col-6{
             border: 40px;
-            
             font-family: Times, Times New Roman, serif;
             font-style: italic;	
             
@@ -96,11 +93,6 @@
             color: whitesmoke;
             opacity: 80%;
             
-
-        }
-
-        .pro-prince {
-            background-size: 400px;
 
         }
 
@@ -148,29 +140,14 @@
             
         }
 
-        .SarahHeading, .sarah-mug-img {
-           height: 350px;
-
-        }
-        @media(max-width = 700px) {
-            .container {
-                background-color: #F6F0FB;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                
-            }
-            .SarahHeading, .sarah-mug-img {
-            width: 100%;
-
+        .SarahMugPic {
+            height: 300px;
         }
 
-        .sarahMugPic {
-            width: 50%;
-            height: 50%;
+        .SarahHeading {
+            text-align: center;
         }
-
-        }
+        
 
     </style>
     
@@ -222,10 +199,10 @@
             <div class="row"></div>
             <div class="row">
             <div class="col-6 border-bottom SarahMugPic">
-                <img src="https://i.postimg.cc/j5B1vDPJ/unnamed-2.jpg" class="sarah-mug-img img-responsive">
+                <img src="https://i.postimg.cc/j5B1vDPJ/unnamed-2.jpg" class="img-responsive SarahMugPic">
             </div> 
             <div class="col-6 border-bottom SarahHeading">
-                <h2 class="display-3">I'm Sarah I love technology and the marine 
+                <h2 class="display-4">I'm Sarah I love technology and the marine 
                 sciences 🐋</h2>
             </div>
             
@@ -268,3 +245,4 @@
     </body>
     
 </html>
+
