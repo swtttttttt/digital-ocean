@@ -4,58 +4,47 @@
 <html lang="en">
     <head class="head">
         <style>
+            h1 {
+                text-align: center;
+            }
+           
             .container {
-                background-color: #F6F0FB;
+                background-color: #FAFAFA;
                 display: flex;
-                flex-direction: row;
                 justify-content: space-between;
                 flex-direction: column;
                 
             }
             
-            h1 {
-                text-align: center;
-            }
-            .col-lg {
-                border-bottom:1px solid #ccc;
-
-            }
-
-            .a {
-                border-bottom:1px solid #ccc;
-                padding-top: 40px;
-                text-align: center;
-            }
-
-            .fiber-image {
-                width: 405px;
-                height: 390px;
-
-            }
-
-            .sarcomere-pic {
-                width: 450px;
-                height: 420px;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-
-            }
-
-            .excited-neuron {
-                width: 100%;
-                height: 100%;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                padding-top: 40px;
-
+            .image-one {
+                width: 280px;
+                height: 300px;
 
             }
 
             .openstax-footer {
                 text-align: center;
             }
+
+            .info-one, .image-one, .info-two, .image-two {
+                width: fit-content;
+
+            }
+
+            @media(max-width = 400px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+            }
+        }
+
+            .info-one, .image-one, 
+            .info-two, .image-two{
+                width: 100%;
+
+        }
         </style>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -110,7 +99,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 a">
+                <div class="col-6 info-one border-bottom">
                     <p>
                         Skeletal muscle cells are long and cyclindrical, 
                         and can grow to be quite big in a full grown adult.  
@@ -123,18 +112,22 @@
                         Actin is a thin filament and myosin is thick, and are often referred to in this way. 
                         The structure of a muscle fiber looks bumpy on account of the arrangment of these filaments. 
                     </p>
-                    <p><strong>The sarcomere</strong>, as mentioned, runs the length of a whole 
-                    muscle fiber unit, only to stop and attach itself to the sarcolemma</p>
-
                 </div>
-                <div class="col-6 b">
-                    <img src="https://openstax.org/apps/archive/20220228.174637/resources/079419aef68b615feb19ec1d7a05d558e06b5adc" class="fiber-image">
+                <div class="col-6 image-one">
+                    <img src="https://openstax.org/apps/archive/20220228.174637/resources/079419aef68b615feb19ec1d7a05d558e06b5adc" class="image-one image-responsive">
                 </div>
             </div>
-            <img src="https://openstax.org/apps/archive/20220228.174637/resources/20598ea3cb1cf18c62196a5f93bbe36a1a6d246f" class="sarcomere-pic center">
+            <p></p>
+            <p></p>
+            <p><strong>The sarcomere</strong>, as mentioned, runs the length of a whole 
+                muscle fiber unit, only to stop and attach itself to the sarcolemma</p>
+
+            <img src="https://openstax.org/apps/archive/20220228.174637/resources/20598ea3cb1cf18c62196a5f93bbe36a1a6d246f" class="sarcomere-pic center image-responsive">
+            <p></p>
+            <p></p>
             
             <div class="row">
-                <div class="col-6 a">
+                <div class="col-6 info-two">
                     <p></p>
                     <p></p>
                     <p></p>
@@ -168,8 +161,8 @@
                         of this calcium into the cells sarcolemma that allows the muscle to contract. 
                     </p>
                 </div>
-                <div class="col-6 b">
-                    <img src="https://openstax.org/apps/archive/20220228.174637/resources/ff663ee127683f7dd83c225b6d39d277da9256ed" class="excited-neuron">
+                <div class="col-6 image-two">
+                    <img src="https://openstax.org/apps/archive/20220228.174637/resources/ff663ee127683f7dd83c225b6d39d277da9256ed" class="image-two image-responsive">
                 </div>    
             </div>
         </div>
