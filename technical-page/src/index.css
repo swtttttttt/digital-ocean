@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+
+.image-one {
+  width: 280px;
+  height: 300px;
+
+}
+
+.openstax-footer {
+  text-align: center;
+}
+
+.info-one, .image-one, .info-two, .image-two {
+  width: fit-content;
+
+}
+
+@media(max-width = 400px) {
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+}
+
+.info-one, .image-one, 
+.info-two, .image-two{
+  width: 100%;
+
+}
