@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'react-router-dom';
 
 function Heading() {
 return (
@@ -14,7 +15,7 @@ d-flex p-2">
   <div className="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
     <ul className="navbar-nav mr-auto">
       <li className="nav-item active">
-        <a className="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <Link className="nav-link" to="./homepage"> Home </Link>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">Link</a>
